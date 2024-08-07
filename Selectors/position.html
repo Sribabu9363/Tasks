@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stat{
+            position: static;
+            margin: 5px;
+            padding: 10px;
+            background-color: greenyellow;
+        }
+        .relat{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            margin: 5px;
+            background-color: lightblue;
+            z-index: 2;
+        }
+        .abs{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            padding: 10px;
+            margin: 5px;
+            background-color: lightgreen;
+            z-index: 1;
+        }
+        .fix{
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            left: 50px;
+            padding: 10px;
+            background-color: yellowgreen;
+            z-index: 3;
+        }
+        .stick{
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            padding: 10px;
+            margin: 5px;
+            background-color: lightcoral;
+            z-index: 1;
+        }
+        .container{
+            height: 500px;
+            overflow: auto;
+            margin-top: 100px;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="stat">This para is positioned using static value</div>
+    <div class="relat">This para is positioned using relative value</div>
+    <div class="abs">This para is positioned using absolute value</div>
+    <div class="fix">This para is positioned using Fixed value</div>
+    <div class="container">
+        <div class="stick">Sticky position with z-index</div>
+        <p>This is a normal para</p>
+    <p>This is a normal para</p>
+    <p>This is a normal para</p>
+    <p>This is a normal para</p>
+    </div>
+</body>
+</html>
