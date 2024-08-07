@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transformations</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: steelblue;
+      transition: transform 0.5s;
+    }
+
+    /* Rotate example */
+    .rotate:hover {
+      transform: rotate(45deg);
+    }
+
+    /* Scale example */
+    .scale:hover {
+      transform: scale(1.5);
+    }
+
+    /* Translate example */
+    .translate:hover {
+      transform: translate(50px, 50px);
+    }
+
+    /* Skew example */
+    .skew:hover {
+      transform: skew(20deg, 10deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box rotate">Rotate</div>
+    <div class="box scale">Scale</div>
+    <div class="box translate">Translate</div>
+    <div class="box skew">Skew</div>
+  </div>
+</body>
+</html>
